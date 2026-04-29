@@ -36,7 +36,8 @@
 ## 🖥️ Demo Preview
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="600">
+ <img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/7878953d-77b7-48ae-a0be-4b7f4ee54ebb" />
+
 </p>
 
 ---

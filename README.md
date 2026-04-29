@@ -1,5 +1,6 @@
-# DeepSignal-AI-Forex-Intelligence-by-Hamdan
-DeepSignal AI is an intelligent forex signal system that uses AI to analyze market conditions and deliver precise trading signals with entry, stop-loss, and take-profit levels.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=200&section=header&text=DeepSignal%20AI&fontSize=40&fontColor=ffffff" />
+</p>
 <h1 align="center">🚀 DeepSignal AI Forex Intelligence</h1>
 <h3 align="center">📊 AI-Powered Forex Trading Signals by Hamdan</h3>
 
@@ -49,63 +50,26 @@ DeepSignal AI is an intelligent forex signal system that uses AI to analyze mark
 
 ---
 
-## 📁 Project Structure
-
-
-forex-ai-bot/
-│
-├── app.py
-├── llm.py
-├── prompt.txt
-├── requirements.txt
-└── .env
-
-
----
-
-## ⚙️ Installation
-
-```bash
-git clone https://github.com/your-username/deepsignal-ai.git
-cd deepsignal-ai
-pip install -r requirements.txt
-🔐 Setup API Key
-
-Create .env file:
-
-DEEPSEEK_API_KEY=your_api_key_here
-▶️ Run the App
-streamlit run app.py
-
-Then open:
-
-👉 http://localhost:8501
-
-📊 Example Output
 Signal: BUY
 Confidence: High
 Entry: 1.0850
 Stop Loss: 1.0830
 Take Profit: 1.0870
 Reason: Strong bullish trend confirmation
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 This tool provides AI-generated trading signals for educational purposes only.
 Always apply proper risk management before trading real money.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Hamdan
-🚀 AI Developer | Forex Enthusiast
+**Hamdan Sadddique**
 
-⭐ Support
+
+## ⭐ Support
 
 If you like this project, give it a ⭐ on GitHub!
 
-<p align="center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=radical" /> </p> <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical" /> </p> ```
-🔥 EXTRA (Optional Animations)
-
-If you want MORE animated effects, add:
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=200&section=header&text=DeepSignal%20AI&fontSize=40&fontColor=ffffff" />

@@ -71,7 +71,7 @@ Always apply proper risk management before trading real money.
 
 If you like this project, give it a ⭐ on GitHub!
 
-
+**Contact For Buy Access**
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=200&section=header&text=DeepSignal%20AI&fontSize=40&fontColor=ffffff" />
 </p>

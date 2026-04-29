@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DeepSeek Forex Signal</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 50px auto; padding: 20px; }
+        input, select { width: 100%; padding: 8px; margin: 5px 0 15px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        .signal-box { background: #f4f4f4; padding: 15px; margin-top: 20px; white-space: pre-wrap; font-family: monospace; }
+        .loading { color: #666; }
+    </style>
+</head>
+<body>
+    <h2>DeepSeek V3/R1 - Forex Signal Generator</h2>
+    
+    <label>Pair:</label><input type="text" id="pair" value="EUR/USD">
+    <label>Timeframe:</label><input type="text" id="timeframe" value="1H">
+    <label>Price:</label><input type="text" id="price" value="1.0850">
+    <label>Trend:</label><input type="text" id="trend" value="Bullish">
+    <label>RSI:</label><input type="text" id="rsi" value="55">
+    <label>EMA Status:</label><input type="text" id="ema" value="Price above EMA50">
+    <label>Support:</label><input type="text" id="support" value="1.0800">
+    <label>Resistance:</label><input type="text" id="resistance" value="1.0900">
+    
+    <button onclick="getSignal()">Get Signal</button>
+    
+    <div class="signal-box" id="result">Click "Get Signal" to see AI analysis</div>
+
+    <script>
+        async function getSignal() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '<span class="loading">Analyzing market data with DeepSeek...</span>';
+            
+            const data = {
+                pair: document.getElementById('pair').value,
+                timeframe: document.getElementById('timeframe').value,
+                price: document.getElementById('price').value,
+                trend: document.getElementById('trend').value,
+                rsi: document.getElementById('rsi').value,
+                ema: document.getElementById('ema').value,
+                support: document.getElementById('support').value,
+                resistance: document.getElementById('resistance').value
+            };
+            
+            try {
+                const response = await fetch('/api/signal', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+                resultDiv.innerHTML = result.signal.replace(/\n/g, '<br>');
+            } catch (error) {
+                resultDiv.innerHTML = 'Error connecting to server';
+            }
+        }
+    </script>
+</body>
+</html>
